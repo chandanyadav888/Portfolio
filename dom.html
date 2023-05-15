@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DomM</title>
+    <script>
+        function myfun(){
+            document.getElementById("demo").classList.add("dark-mode");
+        }
+        function myfun2(){
+            document.getElementById("demo").classList.remove("dark-mode");
+        }
+    </script>
+    <style>
+        .dark-mode{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo" style="border: 1px solid black;">
+    <h1>This is a tile</h1>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore vel ex cum iure illum rerum quasi est harum voluptates veniam, reprehenderit eaque ea neque doloremque hic in minus quibusdam modi!</p>
+    <div>    
+    <button onclick="myfun()" id="demo">dark mode</button>
+    <button onclick="myfun2()" id="demo">light mode</button>
+    <div>
+</body>
+</html>
